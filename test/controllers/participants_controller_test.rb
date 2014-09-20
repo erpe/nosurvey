@@ -2,6 +2,7 @@ require 'test_helper'
 
 class ParticipantsControllerTest < ActionController::TestCase
   setup do
+    @survey = surveys(:one)
     @participant = participants(:one)
   end
 

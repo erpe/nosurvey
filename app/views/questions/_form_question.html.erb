@@ -1,0 +1,12 @@
+<div class='form-question'>
+  <h2>
+   <%= question.title  %> 
+  </h2>
+  <p>
+   <%= question.text %>
+  </p>
+  <div class='form-group'>
+    <%= label_tag "answer #{question.id}", "Bitte auswählen" %>
+    <%= select_tag "answer[#{question.id }]", options_for_select(answer_options) , class: 'form-control' %>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 class ParticipantsController < ApplicationController
   before_action :set_participant, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_survey
   # GET /participants
   # GET /participants.json
   def index
@@ -65,6 +65,10 @@ class ParticipantsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_participant
       @participant = Participant.find(params[:id])
+    end
+
+    def set_survey
+      @survey = Survey.find(params[:survey_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
