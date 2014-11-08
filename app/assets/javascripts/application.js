@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.slider
+//= require jquery-ui/slider
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
